@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql2
-  database: db/
+  database: db
   user: root
   password: "6365878"
   pool: 5
@@ -16,7 +16,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: mysql2
-  database: db/
+  database: db
   user: root
   password: "6365878"
   pool: 5
