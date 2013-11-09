@@ -23,7 +23,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
+  adapter: mysql2
   database: DATABASE_URL
   user: root
   password: "6365878"
