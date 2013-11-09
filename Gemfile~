@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '3.2.13'
 gem "heroku"
 # Use sqlite3 as the database for Active Record
 
@@ -34,7 +34,9 @@ end
 group :development, :test do
   gem 'mysql2'
 end
+gem 'thin'#use thin instead of Webrick //with production
 group :production do
+  
   gem 'pg'
 end
 # Use ActiveModel has_secure_password

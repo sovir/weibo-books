@@ -34,7 +34,9 @@ end
 group :development, :test do
   gem 'mysql2'
 end
+gem 'thin'#use thin instead of Webrick //with production
 group :production do
+  
   gem 'pg'
 end
 # Use ActiveModel has_secure_password
