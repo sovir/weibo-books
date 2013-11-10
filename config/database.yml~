@@ -5,8 +5,8 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql2
-  database: development.sqlite3
-  user: root
+  database:
+  user: sovir
   password: "6365878"
   pool: 5
   timeout: 5000
@@ -16,8 +16,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: mysql2
-  database: development.sqlite3
-  user: root
+  database: 
+  user: sovir
   password: "6365878"
   pool: 5
   timeout: 5000
@@ -25,7 +25,7 @@ test:
 production:
   adapter: postgresql
   database: development.sqlite3
-  user: root
+  user: sovir
   password: "6365878"
   pool: 5
   timeout: 5000
