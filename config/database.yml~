@@ -23,8 +23,8 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: development.sqlite3
+  adapter: mysql2
+  database: 
   user: sovir
   password: "6365878"
   pool: 5
