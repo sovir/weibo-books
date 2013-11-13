@@ -6,4 +6,4 @@ class WelcomeController < ApplicationController
 	CommentMailer.sendmail("hitwavebook@163.com", @addr.to_s, "hitwave", "yourbook", @message).deliver
   end
 
-end
+end   
