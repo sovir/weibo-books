@@ -6,8 +6,8 @@
 development:
   adapter: mysql2
   database: yaoguai
-  user: sovir
-  password: "6365878"
+  user: root
+  password: "root"
   pool: 5
   timeout: 5000
 
