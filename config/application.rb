@@ -21,3 +21,17 @@ module WeiboBook
     # config.i18n.default_locale = :de
   end
 end
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.raise_delivery_errors = true
+ 
+ActionMailer::Base.smtp_settings = {
+  :address              => "smtp.163.com",
+  :port                 => 25,
+  :domain               => "163.com",
+  :user_name            => "hitwavebook",
+  :password             => "hitwave",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}
