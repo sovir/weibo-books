@@ -1,0 +1,15 @@
+<div class="container">
+<div class="center hero-unit">
+	<h1>Welcome to Wei_Book!</h1>
+</div>
+</div>
+
+<%= @addr.to_s %>
+<%= form_tag :action => 'index' do %>
+	<p>请填写您的电子邮箱地址:
+	<%= text_field_tag 'email_addr', @addr %></p>
+
+	<%= submit_tag '将微博书发送至我的电子邮箱' %>
+
+	<% end %>
+

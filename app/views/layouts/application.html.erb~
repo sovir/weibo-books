@@ -5,10 +5,12 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+<meta property="wb:webmaster" content="05bd7f23da0e122a" />
 </head>
 <body>
-
+<%= render 'layouts/header' %>
 <%= yield %>
-
+ <%= yield %>
+      <%= render 'layouts/footer' %>
 </body>
 </html>

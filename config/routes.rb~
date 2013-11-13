@@ -1,11 +1,22 @@
 WeiboBook::Application.routes.draw do
+  get "users/show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :welcome
+   post "welcome/show"
+  get "welcome/show"
   get "welcome/index"
   # You can have the root of your site routed with "root"
-   root to : "welcome#index"
+   root to: "welcome#index"
+  	match '/help',    to: 'welcome#help'
+  	match '/about',   to: 'welcome#about'
+  	match '/contact', to: 'welcome#contact'
 
+  get "welcome/help"
+
+  get "welcome/about"
+
+	get "welcome/contact"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

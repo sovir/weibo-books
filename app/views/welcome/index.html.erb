@@ -1,15 +1,12 @@
-<div class="container">
-<div class="center hero-unit">
-	<h1>Welcome to Wei_Book!</h1>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2065192073" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+
+<div id="wb_connect_btn" >
+<wb:login-button type="3,2" onlogin="login" onlogout="logout"><link_to "登录按钮" ></wb:login-button>
 </div>
-</div>
 
-<%= @addr.to_s %>
-<%= form_tag :action => 'index' do %>
-	<p>请填写您的电子邮箱地址:
-	<%= text_field_tag 'email_addr', @addr %></p>
-
-	<%= submit_tag '将微博书发送至我的电子邮箱' %>
-
-	<% end %>
-
+</body>
