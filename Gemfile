@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+#gemspec
+
 ruby '1.9.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -16,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,6 +42,11 @@ group :production do
   
   gem 'pg'
 end
+#oAuth2,for sina
+  gem 'devise'
+  gem 'omniauth'
+  gem 'omniauth-weibo-oauth2'
+  gem 'weibo_2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
