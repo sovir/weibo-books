@@ -8,6 +8,7 @@ WeiboBook::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
   #resources :welcome
    post "welcome/show"
+   post "books/send"
   get "welcome/show"
   get "welcome/index"
   # You can have the root of your site routed with "root"
