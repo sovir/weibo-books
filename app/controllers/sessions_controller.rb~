@@ -17,28 +17,29 @@ WeiboOAuth2::Config.redirect_uri = "http://127.0.0.1:3000/sessions/callback"
   	session[:access_token] =  access_token.token
   	session[:expires_at] =  access_token.expires_at
 	#client.users.show(session[:uid])
-	p access_token.inspect
-    	p access_token.validated?
-	@screen_name=client.users.screen_name
-	if session[:uid]
-	    @user = User.find_by_id(session[:uid])
-	    @statuses = client.statuses
-	    if @user
-		@curent_user=@user
-		redirext_to sessions_create_path
-	    else
-		@user=client.users.show_by_uid(session[:uid]) 
-		redirect_to users_create_path
-	    end
-	end
+	client.statuses.update("It's");
+	#p access_token.inspect
+	#@screen_name=client.users.screen_name
+	#if session[:uid]
+	   # @user = User.find_by_id(session[:uid])
+	   # @statuses = client.statuses
+	    #if @user
+		#@curent_user=@user
+		redirect_to sessions_create_path
+	   # else
+		#@user=client.users.show_by_uid(session[:uid]) 
+		#redirect_to users_create_path
+	   # end
+	#end
   end
   def create
-	 client = WeiboOAuth2::Client.new
-	  if session[:access_token] && !client.authorized?
-	    token = client.get_token_from_hash({:access_token => session[:access_token], :expires_at => session[:expires_at]}) 
-	    p "*" * 80 + "validated"
-	    p token.inspect
-	    p token.validated?
+	# client = WeiboOAuth2::Client.new
+	  #if session[:access_token] && !client.authorized?
+	  # token = client.get_token_from_hash({:access_token => session[:access_token], :expires_at => session[:expires_at]}) 
+	   # p "*" * 80 + "validated"
+	   # p token.inspect
+	    #p token.validated?
+	#end
 	@text="Book created!"
   end
   def find

@@ -13,6 +13,8 @@ gem 'pry-debugger'
 gem 'pry-stack_explorer'
 gem 'pry-nav'
 
+#rails tool
+
 # Use sqlite3 as the database for Active Record
 
 
