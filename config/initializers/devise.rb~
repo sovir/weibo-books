@@ -1,0 +1,1 @@
+omniauth.config :weibo, 'key', 'secret', :scope => 'user,public_repo'

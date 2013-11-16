@@ -1,0 +1,9 @@
+// Place all the styles related to the sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.a .align-center{
+	margin:0 auto;		/* 居中 这个是必须的，，其它的属性非必须 */
+	width:500px;		/* 给个宽度 顶到浏览器的两边就看不出居中效果了 */
+	background:none;		/* 背景色 */
+	text-align:left; 	/* 文字等内容居中 */
+}

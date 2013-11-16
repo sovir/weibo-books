@@ -2,10 +2,18 @@
 
 <!-- app/assets/images/ -->
 
-<pre>
-<form>		<input type="radio" name="template" value="timeline">时间轴 								<input type="radio" name="template" value="magazine">杂志 								<input type="radio" name="template" value="novel">小说 <form>
-	<%= image_tag "qiuzhenxiang.jpg", :size => "150x150" %>						<%= image_tag "qiuzhenxiang.jpg", :size => "150x150" %>						<%= image_tag "qiuzhenxiang.jpg", :size => "150x150" %> 
-</pre>
+
+<form style="margin-left:auto;margin-right:auto;background-color:#32CD32;text-align:center;width:1000px;height:200px;filter:alpha(opacity=10,Style=0);">
+	<div style="margin-top:30px;">
+	<input type="radio" name="template" value="timeline" style="margin-left:auto;margin-top:0px;">时间轴 
+	<%= image_tag "timeline.jpg", :size => "150x150" %>	
+	<input type="radio" name="template" value="magazine"style="margin-left:100px;margin-top:0px;">杂志 	
+	<%= image_tag "magzine.jpg", :size => "250x250" %>	
+	<input type="radio" name="template" value="novel"style="margin-left:100px;margin-top:0px;">小说 
+	<%= image_tag "tell.jpg", :size => "120x120" %>
+	</div>	
+</form>
+
 <p>
 <center>	<%= link_to "生成我的微博书",books_show_path %> </center>
 </p>

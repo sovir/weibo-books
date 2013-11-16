@@ -4,19 +4,21 @@ WeiboBook::Application.routes.draw do
   get "sessions/new"
   get "sessions/select"
   get "users/show"
+  get "sessions/create"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   #resources :welcome
    post "welcome/show"
    post "books/send"
   get "welcome/show"
-  get "welcome/index"
+  get "welcome/home"
+  get "sessions/callback"
   # You can have the root of your site routed with "root"
-   root to: "welcome#index"
+   root to: "welcome#home"
   	match '/help',    to: 'welcome#help' ,via: [:get, :post]
   	match '/about',   to: 'welcome#about',via: [:get, :post]
   	match '/contact', to: 'welcome#contact',via: [:get, :post]
-
+	match '/new', to: 'sessions#new',via: [:get, :post]
   get "welcome/help"
 
   get "welcome/about"

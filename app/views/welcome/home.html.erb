@@ -1,10 +1,12 @@
-<%provide(:title, "首页")%>
-<div class="container">
-<div class="center hero-unit">
-  <h1>Fancy Wiki Book</h1>
-
-  <h2>FancyBook 一个线上合作的书籍创建平台。</h2>
-
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+<body>
+<div   style="width: 800px;height: 400px;">
+ <div  style="width: 800px;height: 400px;margin-left:30px;">
+	<%= render 'layouts/major' %>
+ </div>
+ <div style="width: 200px; height: 400px; margin-left:30px;position: relative;
+  left: 850px;
+  top: -400px;">
+	<%= render 'layouts/right' %>
+ </div>
 </div>
-</div>
+

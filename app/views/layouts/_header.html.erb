@@ -2,23 +2,23 @@
 <head>
 </head>
 </html>
-<header class="navbar navbar-inverse navbar-fixed-top">
+<header class="navbar navbar-inverse navbar-fixed-top" >
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "Wei-Book", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "主页", root_path %></li>
-          <li><%= link_to "帮助", help_path %></li>
-          
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <li><%= link_to "New", new_path %></li>
 		  <% if signed_in? %>
 			<li id="fat-menu" class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=current_user.name%><b class="caret"></b></a>
 				<ul class="dropdown-menu">
-				<li><%= link_to "用户资料", current_user %></li>
-				<li><%= link_to "正在编辑", editchapter_path %></li>
-        <li><%= link_to "消息", applies_path%></li>
-        <li><%= link_to "设置", edit_user_path(current_user) %></li>
+				<li><%= link_to "user_information", current_user %></li>
+				<li><%= link_to "edditing", editchapter_path %></li>
+        <li><%= link_to "message", applies_path%></li>
+        <li><%= link_to "setting", edit_user_path(current_user) %></li>
         <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", signout_path, method: "delete" %>
@@ -26,7 +26,9 @@
               </ul>
             </li>
           <% else %>
-            <li><%= link_to "Sign in",sessions_new_path %></li>
+		<li style="margin-right:-50px;"><%= link_to image_tag("loginButton_24.png"),sessions_new_path %>
+            </li>
+
           <% end %>
         </ul>
       </nav>

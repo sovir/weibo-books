@@ -1,0 +1,12 @@
+<body style='background="app/assets/image/sucai.jpg"'>
+<div   style="width: 800px;height: 400px;">
+ <div  style="width: 800px;height: 400px;margin-left:30px;">
+	<%= render 'layouts/major' %>
+ </div>
+ <div style="width: 200px; height: 400px; margin-left:30px;position: relative;
+  left: 850px;
+  top: -400px;">
+	<%= render 'layouts/right' %>
+ </div>
+</div>
+
